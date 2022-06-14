@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto de Web</title>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="codigo.js" defer></script>
+</head>
+<body> 
+    <button id="avancarbt" onclick="cliqueAqui()">Começar jogo</button>
+    <button id="reiniciar-jogo" onclick="reiniciar()">Reiniciar jogo</button>
+    <div id="jogo-all">
+        <p id="perguntas"></p>
+        <div id="alternativasdiv">
+            <input type="radio" id="alternativa1" name="alternativas" value="errada1"></input><label id="label1" for="alterntiva1"></label>
+            <input type="radio" id="alternativa2" name="alternativas" value="errada2"></input><label id="label2" for="alternativa2"></label>
+            <input type="radio" id="alternativa3" name="alternativas" value="correta"></input><label id="label3" for="alternativa3"></label>
+            <input type="radio" id="alternativa4" name="alternativas" value="errada3"></input><label id="label4" for="alternativa4"></label>
+            <button id="confirmarRes" onclick="confirmaResposta()">confirmar</button>
+            
+        </div>
+        <div id="resposta-correta">
+            <h1 id="resposta"></h1>
+            
+        </div>
+       <button id="finalizarbt" onclick="finalizar()">finalizar jogo</button>
+        
+        
+        
+    </div>
+</body>
+</html>
